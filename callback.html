@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      // Redirect to your local Flask app
+      window.location.href = "http://127.0.0.1:5051/callback?" + params.toString();
+    </script>
+  </head>
+  <body>
+    Redirecting to local app...
+  </body>
+</html>
